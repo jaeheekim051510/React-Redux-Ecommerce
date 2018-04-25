@@ -6,7 +6,7 @@ import './index.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-import Screen from './components/Screen';
+import App from './App';
 import reducer from './reducers/index';
 
 
@@ -16,7 +16,7 @@ let store = createStore(reducer,
 
 let ui =
 <Provider store={store}>
-    <Screen />
+    <App />
 </Provider>
 
 ReactDOM.render(ui, document.getElementById('root'));
